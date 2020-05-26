@@ -1,5 +1,0 @@
-/home/adress/Projects/Calculator/Calculator/bin/Debug/Calculator.exe
-/home/adress/Projects/Calculator/Calculator/bin/Debug/Calculator.pdb
-/home/adress/Projects/Calculator/Calculator/obj/x86/Debug/Calculator.csproj.CoreCompileInputs.cache
-/home/adress/Projects/Calculator/Calculator/obj/x86/Debug/Calculator.exe
-/home/adress/Projects/Calculator/Calculator/obj/x86/Debug/Calculator.pdb
