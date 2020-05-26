@@ -31,7 +31,7 @@ public partial class MainWindow
 
 	private global::Gtk.Button btnDIv;
 
-	private global::Gtk.Button btnSqrt;
+	private global::Gtk.Button btnPercetage;
 
 	private global::Gtk.HBox hbox6;
 
@@ -43,8 +43,6 @@ public partial class MainWindow
 
 	private global::Gtk.Button addMult;
 
-	private global::Gtk.Button btnPercetage;
-
 	private global::Gtk.HBox hbox1;
 
 	private global::Gtk.Button btn1;
@@ -55,7 +53,7 @@ public partial class MainWindow
 
 	private global::Gtk.Button btnMinus;
 
-	private global::Gtk.Button btnRecip;
+	private global::Gtk.Button btnSqrt;
 
 	private global::Gtk.HBox hbox2;
 
@@ -227,16 +225,16 @@ public partial class MainWindow
 		w12.Expand = false;
 		w12.Fill = false;
 		// Container child hbox5.Gtk.Box+BoxChild
-		this.btnSqrt = new global::Gtk.Button();
-		this.btnSqrt.WidthRequest = 51;
-		this.btnSqrt.HeightRequest = 36;
-		this.btnSqrt.CanDefault = true;
-		this.btnSqrt.CanFocus = true;
-		this.btnSqrt.Name = "btnSqrt";
-		this.btnSqrt.UseUnderline = true;
-		this.btnSqrt.Label = "sqrt";
-		this.hbox5.Add(this.btnSqrt);
-		global::Gtk.Box.BoxChild w13 = ((global::Gtk.Box.BoxChild)(this.hbox5[this.btnSqrt]));
+		this.btnPercetage = new global::Gtk.Button();
+		this.btnPercetage.WidthRequest = 51;
+		this.btnPercetage.HeightRequest = 36;
+		this.btnPercetage.Sensitive = false;
+		this.btnPercetage.CanDefault = true;
+		this.btnPercetage.CanFocus = true;
+		this.btnPercetage.Name = "btnPercetage";
+		this.btnPercetage.UseUnderline = true;
+		this.hbox5.Add(this.btnPercetage);
+		global::Gtk.Box.BoxChild w13 = ((global::Gtk.Box.BoxChild)(this.hbox5[this.btnPercetage]));
 		w13.Position = 4;
 		w13.Expand = false;
 		w13.Fill = false;
@@ -305,25 +303,11 @@ public partial class MainWindow
 		w18.Position = 3;
 		w18.Expand = false;
 		w18.Fill = false;
-		// Container child hbox6.Gtk.Box+BoxChild
-		this.btnPercetage = new global::Gtk.Button();
-		this.btnPercetage.WidthRequest = 51;
-		this.btnPercetage.HeightRequest = 36;
-		this.btnPercetage.CanDefault = true;
-		this.btnPercetage.CanFocus = true;
-		this.btnPercetage.Name = "btnPercetage";
-		this.btnPercetage.UseUnderline = true;
-		this.btnPercetage.Label = "%";
-		this.hbox6.Add(this.btnPercetage);
-		global::Gtk.Box.BoxChild w19 = ((global::Gtk.Box.BoxChild)(this.hbox6[this.btnPercetage]));
+		this.vcontainer.Add(this.hbox6);
+		global::Gtk.Box.BoxChild w19 = ((global::Gtk.Box.BoxChild)(this.vcontainer[this.hbox6]));
 		w19.Position = 4;
 		w19.Expand = false;
 		w19.Fill = false;
-		this.vcontainer.Add(this.hbox6);
-		global::Gtk.Box.BoxChild w20 = ((global::Gtk.Box.BoxChild)(this.vcontainer[this.hbox6]));
-		w20.Position = 4;
-		w20.Expand = false;
-		w20.Fill = false;
 		// Container child vcontainer.Gtk.Box+BoxChild
 		this.hbox1 = new global::Gtk.HBox();
 		this.hbox1.Name = "hbox1";
@@ -338,10 +322,10 @@ public partial class MainWindow
 		this.btn1.UseUnderline = true;
 		this.btn1.Label = "1";
 		this.hbox1.Add(this.btn1);
-		global::Gtk.Box.BoxChild w21 = ((global::Gtk.Box.BoxChild)(this.hbox1[this.btn1]));
-		w21.Position = 0;
-		w21.Expand = false;
-		w21.Fill = false;
+		global::Gtk.Box.BoxChild w20 = ((global::Gtk.Box.BoxChild)(this.hbox1[this.btn1]));
+		w20.Position = 0;
+		w20.Expand = false;
+		w20.Fill = false;
 		// Container child hbox1.Gtk.Box+BoxChild
 		this.btn2 = new global::Gtk.Button();
 		this.btn2.WidthRequest = 51;
@@ -352,10 +336,10 @@ public partial class MainWindow
 		this.btn2.UseUnderline = true;
 		this.btn2.Label = "2";
 		this.hbox1.Add(this.btn2);
-		global::Gtk.Box.BoxChild w22 = ((global::Gtk.Box.BoxChild)(this.hbox1[this.btn2]));
-		w22.Position = 1;
-		w22.Expand = false;
-		w22.Fill = false;
+		global::Gtk.Box.BoxChild w21 = ((global::Gtk.Box.BoxChild)(this.hbox1[this.btn2]));
+		w21.Position = 1;
+		w21.Expand = false;
+		w21.Fill = false;
 		// Container child hbox1.Gtk.Box+BoxChild
 		this.btn3 = new global::Gtk.Button();
 		this.btn3.WidthRequest = 51;
@@ -366,10 +350,10 @@ public partial class MainWindow
 		this.btn3.UseUnderline = true;
 		this.btn3.Label = "3";
 		this.hbox1.Add(this.btn3);
-		global::Gtk.Box.BoxChild w23 = ((global::Gtk.Box.BoxChild)(this.hbox1[this.btn3]));
-		w23.Position = 2;
-		w23.Expand = false;
-		w23.Fill = false;
+		global::Gtk.Box.BoxChild w22 = ((global::Gtk.Box.BoxChild)(this.hbox1[this.btn3]));
+		w22.Position = 2;
+		w22.Expand = false;
+		w22.Fill = false;
 		// Container child hbox1.Gtk.Box+BoxChild
 		this.btnMinus = new global::Gtk.Button();
 		this.btnMinus.WidthRequest = 51;
@@ -380,29 +364,29 @@ public partial class MainWindow
 		this.btnMinus.UseUnderline = true;
 		this.btnMinus.Label = "-";
 		this.hbox1.Add(this.btnMinus);
-		global::Gtk.Box.BoxChild w24 = ((global::Gtk.Box.BoxChild)(this.hbox1[this.btnMinus]));
-		w24.Position = 3;
+		global::Gtk.Box.BoxChild w23 = ((global::Gtk.Box.BoxChild)(this.hbox1[this.btnMinus]));
+		w23.Position = 3;
+		w23.Expand = false;
+		w23.Fill = false;
+		// Container child hbox1.Gtk.Box+BoxChild
+		this.btnSqrt = new global::Gtk.Button();
+		this.btnSqrt.WidthRequest = 51;
+		this.btnSqrt.HeightRequest = 36;
+		this.btnSqrt.CanDefault = true;
+		this.btnSqrt.CanFocus = true;
+		this.btnSqrt.Name = "btnSqrt";
+		this.btnSqrt.UseUnderline = true;
+		this.btnSqrt.Label = "sqrt";
+		this.hbox1.Add(this.btnSqrt);
+		global::Gtk.Box.BoxChild w24 = ((global::Gtk.Box.BoxChild)(this.hbox1[this.btnSqrt]));
+		w24.Position = 4;
 		w24.Expand = false;
 		w24.Fill = false;
-		// Container child hbox1.Gtk.Box+BoxChild
-		this.btnRecip = new global::Gtk.Button();
-		this.btnRecip.WidthRequest = 51;
-		this.btnRecip.HeightRequest = 36;
-		this.btnRecip.CanDefault = true;
-		this.btnRecip.CanFocus = true;
-		this.btnRecip.Name = "btnRecip";
-		this.btnRecip.UseUnderline = true;
-		this.btnRecip.Label = "1/x";
-		this.hbox1.Add(this.btnRecip);
-		global::Gtk.Box.BoxChild w25 = ((global::Gtk.Box.BoxChild)(this.hbox1[this.btnRecip]));
-		w25.Position = 4;
+		this.vcontainer.Add(this.hbox1);
+		global::Gtk.Box.BoxChild w25 = ((global::Gtk.Box.BoxChild)(this.vcontainer[this.hbox1]));
+		w25.Position = 5;
 		w25.Expand = false;
 		w25.Fill = false;
-		this.vcontainer.Add(this.hbox1);
-		global::Gtk.Box.BoxChild w26 = ((global::Gtk.Box.BoxChild)(this.vcontainer[this.hbox1]));
-		w26.Position = 5;
-		w26.Expand = false;
-		w26.Fill = false;
 		// Container child vcontainer.Gtk.Box+BoxChild
 		this.hbox2 = new global::Gtk.HBox();
 		this.hbox2.Name = "hbox2";
@@ -417,10 +401,10 @@ public partial class MainWindow
 		this.btnZero.UseUnderline = true;
 		this.btnZero.Label = "0";
 		this.hbox2.Add(this.btnZero);
-		global::Gtk.Box.BoxChild w27 = ((global::Gtk.Box.BoxChild)(this.hbox2[this.btnZero]));
-		w27.Position = 0;
-		w27.Expand = false;
-		w27.Fill = false;
+		global::Gtk.Box.BoxChild w26 = ((global::Gtk.Box.BoxChild)(this.hbox2[this.btnZero]));
+		w26.Position = 0;
+		w26.Expand = false;
+		w26.Fill = false;
 		// Container child hbox2.Gtk.Box+BoxChild
 		this.btnPoint = new global::Gtk.Button();
 		this.btnPoint.WidthRequest = 51;
@@ -431,10 +415,10 @@ public partial class MainWindow
 		this.btnPoint.UseUnderline = true;
 		this.btnPoint.Label = ".";
 		this.hbox2.Add(this.btnPoint);
-		global::Gtk.Box.BoxChild w28 = ((global::Gtk.Box.BoxChild)(this.hbox2[this.btnPoint]));
-		w28.Position = 1;
-		w28.Expand = false;
-		w28.Fill = false;
+		global::Gtk.Box.BoxChild w27 = ((global::Gtk.Box.BoxChild)(this.hbox2[this.btnPoint]));
+		w27.Position = 1;
+		w27.Expand = false;
+		w27.Fill = false;
 		// Container child hbox2.Gtk.Box+BoxChild
 		this.btnAdd = new global::Gtk.Button();
 		this.btnAdd.WidthRequest = 51;
@@ -445,10 +429,10 @@ public partial class MainWindow
 		this.btnAdd.UseUnderline = true;
 		this.btnAdd.Label = "+";
 		this.hbox2.Add(this.btnAdd);
-		global::Gtk.Box.BoxChild w29 = ((global::Gtk.Box.BoxChild)(this.hbox2[this.btnAdd]));
-		w29.Position = 2;
-		w29.Expand = false;
-		w29.Fill = false;
+		global::Gtk.Box.BoxChild w28 = ((global::Gtk.Box.BoxChild)(this.hbox2[this.btnAdd]));
+		w28.Position = 2;
+		w28.Expand = false;
+		w28.Fill = false;
 		// Container child hbox2.Gtk.Box+BoxChild
 		this.btnEqual = new global::Gtk.Button();
 		this.btnEqual.WidthRequest = 108;
@@ -459,22 +443,22 @@ public partial class MainWindow
 		this.btnEqual.UseUnderline = true;
 		this.btnEqual.Label = "=";
 		this.hbox2.Add(this.btnEqual);
-		global::Gtk.Box.BoxChild w30 = ((global::Gtk.Box.BoxChild)(this.hbox2[this.btnEqual]));
-		w30.Position = 3;
+		global::Gtk.Box.BoxChild w29 = ((global::Gtk.Box.BoxChild)(this.hbox2[this.btnEqual]));
+		w29.Position = 3;
+		w29.Expand = false;
+		w29.Fill = false;
+		this.vcontainer.Add(this.hbox2);
+		global::Gtk.Box.BoxChild w30 = ((global::Gtk.Box.BoxChild)(this.vcontainer[this.hbox2]));
+		w30.Position = 6;
 		w30.Expand = false;
 		w30.Fill = false;
-		this.vcontainer.Add(this.hbox2);
-		global::Gtk.Box.BoxChild w31 = ((global::Gtk.Box.BoxChild)(this.vcontainer[this.hbox2]));
-		w31.Position = 6;
-		w31.Expand = false;
-		w31.Fill = false;
 		this.Add(this.vcontainer);
 		if ((this.Child != null))
 		{
 			this.Child.ShowAll();
 		}
 		this.DefaultWidth = 300;
-		this.DefaultHeight = 286;
+		this.DefaultHeight = 293;
 		this.Show();
 		this.DeleteEvent += new global::Gtk.DeleteEventHandler(this.OnDeleteEvent);
 		this.entry.Changed += new global::System.EventHandler(this.OnEntryChanged);
@@ -486,7 +470,6 @@ public partial class MainWindow
 		this.btn8.Clicked += new global::System.EventHandler(this.OnBtnCharClicked);
 		this.btn9.Clicked += new global::System.EventHandler(this.OnBtnCharClicked);
 		this.btnDIv.Clicked += new global::System.EventHandler(this.OnBtnCharClicked);
-		this.btnSqrt.Clicked += new global::System.EventHandler(this.OnBtnSqrtClicked);
 		this.btn4.Clicked += new global::System.EventHandler(this.OnBtnCharClicked);
 		this.btn5.Clicked += new global::System.EventHandler(this.OnBtnCharClicked);
 		this.btn6.Clicked += new global::System.EventHandler(this.OnBtnCharClicked);
@@ -495,6 +478,7 @@ public partial class MainWindow
 		this.btn2.Clicked += new global::System.EventHandler(this.OnBtnCharClicked);
 		this.btn3.Clicked += new global::System.EventHandler(this.OnBtnCharClicked);
 		this.btnMinus.Clicked += new global::System.EventHandler(this.OnBtnCharClicked);
+		this.btnSqrt.Clicked += new global::System.EventHandler(this.OnBtnSqrtClicked);
 		this.btnZero.Clicked += new global::System.EventHandler(this.OnBtnCharClicked);
 		this.btnPoint.Clicked += new global::System.EventHandler(this.OnBtnCharClicked);
 		this.btnAdd.Clicked += new global::System.EventHandler(this.OnBtnCharClicked);
